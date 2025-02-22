@@ -3,7 +3,7 @@ module.exports = {
     name: "linkAutoDownload",
     version: "1.3.0",
     hasPermssion: 0,
-    credits: "ARIF BABU",
+    credits: "nazrul",
     description:
       "Automatically detects links in messages and downloads the file.",
     commandCategory: "Utilities",
@@ -19,7 +19,7 @@ module.exports = {
     const body = content.toLowerCase();
     const { alldown } = require("nayan-videos-downloader");
     if (body.startsWith("https://")) {
-      api.setMessageReaction("📿", event.messageID, (err) => {}, true);
+      api.setMessageReaction("💔", event.messageID, (err) => {}, true);
       const data = await alldown(content);
       console.log(data);
       const { low, high, title } = data.data;
@@ -36,7 +36,7 @@ module.exports = {
 
       return api.sendMessage(
         {
-          body: `✨❁ ━━ ━[ 𝐌.𝐑 𝐒𝐇𝐀𝐀𝐍 ]━ ━━ ❁✨\n\nᴛɪᴛʟᴇ: ${title}\n\n✨❁ ━━ ━[ 𝐋𝐎 𝐁𝐀𝐁𝐘 𝐀𝐏𝐊𝐈 𝐕𝐈𝐃𝐄𝐎 ]━ ━━ ❁✨`,
+          body: `${title}`,
           attachment: fs.createReadStream(__dirname + "/cache/auto.mp4"),
         },
         event.threadID,
