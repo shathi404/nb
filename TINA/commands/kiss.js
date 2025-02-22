@@ -1,11 +1,11 @@
 module.exports.config = {
   name: "kiss",
   version: "2.0.0",
-  permssion: 0,
+  hasPermssion: 0,
   prefix: true,
-  credits: "Clarence DK",
+  credits: "nazrul",
   description: "Get fuck",
-  category: "img",
+  commandCategory: "img",
   usages: "[@mention]",
   cooldowns: 5,
   dependencies: {
