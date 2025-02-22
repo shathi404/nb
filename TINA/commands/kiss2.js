@@ -1,16 +1,12 @@
-/**
-* @author ProCoderMew
-* @warn Do not edit code or edit credits
-*/
 
 module.exports.config = {
     name: "kiss2",
     version: "2.0.0",
-    permission: 0,
+    hasPermssion: 0,
     credits: "nazrul",
     prefix: true,
     description: "",
-    category: "Love",
+    commandCategory: "Love",
     usages: "[tag]",
     cooldowns: 5,
     dependencies: {
